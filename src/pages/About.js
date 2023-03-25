@@ -1,7 +1,8 @@
 import React from 'react'
 import MovingText from 'react-moving-text'
 import MovingComponent from 'react-moving-text'
-import deepanshuImg from '../assets/deep.jpg';
+import deepanshuImg1 from '../assets/deep.jpg';
+import deepanshuImg2 from '../assets/deep2.jpg';
 import './About.css';
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
 
             <div className='flex  justify-around mx-10 my-20 flex-col sm:flex-row gap-4' >
                 <div className='mx-4'>
-                    <img src={deepanshuImg} alt="deepanshu" className='vibrate rounded-lg  border-red-100 border-2 ' />
+                    <img src={deepanshuImg1} alt="deepanshu" className='vibrate rounded-lg  border-red-100 border-2 ' />
                 </div>
 
                 <div className='  flex flex-col justify-center items-center'>
@@ -61,7 +62,7 @@ const About = () => {
 
                 </div>
                 <div className='mx-4'>
-                    <img src={deepanshuImg} alt="deepanshu" className='rounded-lg  border-red-100 border-2 ' />
+                    <img src={deepanshuImg2} alt="deepanshu" className='rounded-lg  border-red-100 border-2 ' />
                 </div>
             </div>
         </div>
