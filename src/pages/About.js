@@ -35,7 +35,7 @@ const About = () => {
                         <MovingComponent type="typewriter"
                             dataText={[
                                 'Deepanshu Singhal',
-                                'Programming Anthusuast',
+                                'Programming Enthusiast',
                                 'Full Stack Developer',
                                 'Competitive Programmer'
                             ]} />
