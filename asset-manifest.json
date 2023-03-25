@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/premiumCourseMenu/static/css/main.d0b55c8a.css",
-    "main.js": "/premiumCourseMenu/static/js/main.47d4bf5c.js",
+    "main.js": "/premiumCourseMenu/static/js/main.7516f1f8.js",
     "static/media/signup.png": "/premiumCourseMenu/static/media/signup.b431d919de01b6515dd6.png",
     "static/media/login.png": "/premiumCourseMenu/static/media/login.4d877a447365e5137b67.png",
+    "static/media/deep2.jpg": "/premiumCourseMenu/static/media/deep2.4264cc40ed5f37b14245.jpg",
     "static/media/deep.jpg": "/premiumCourseMenu/static/media/deep.a0e8b94cc97748207dd7.jpg",
     "static/media/frame.png": "/premiumCourseMenu/static/media/frame.3a238e5f26d676376e1d.png",
     "static/media/Logo.svg": "/premiumCourseMenu/static/media/Logo.fd896773ef070a122541fd8722efa10f.svg",
     "index.html": "/premiumCourseMenu/index.html",
     "main.d0b55c8a.css.map": "/premiumCourseMenu/static/css/main.d0b55c8a.css.map",
-    "main.47d4bf5c.js.map": "/premiumCourseMenu/static/js/main.47d4bf5c.js.map"
+    "main.7516f1f8.js.map": "/premiumCourseMenu/static/js/main.7516f1f8.js.map"
   },
   "entrypoints": [
     "static/css/main.d0b55c8a.css",
-    "static/js/main.47d4bf5c.js"
+    "static/js/main.7516f1f8.js"
   ]
 }
