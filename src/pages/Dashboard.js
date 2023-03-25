@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Cards from "../components/Cards";
-import Navbar from "../components/Navbar";
 import Filter from "../components/Filter";
 import { apiUrl, filterData } from "../data";
 import { toast } from 'react-hot-toast';
