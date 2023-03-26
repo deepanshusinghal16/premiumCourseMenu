@@ -26,7 +26,7 @@ const Template = ({ title, desc1, desc2, image, fromType, setLoggedIn }) => {
                 </div>
 
 
-                <button className='flex justify-center items-center w-[100%] gap-3 mb-5'>
+                <button className='flex justify-center items-center w-[100%] gap-3 mb-5 rounded-2xl border-2 border-slate-900  py-1 hover:border-slate-700 transition-all duration-300  '>
                     <FcGoogle />
                     <p>Sign in with Google</p>
                 </button>

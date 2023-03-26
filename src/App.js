@@ -8,7 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import { useState } from 'react';
 import About from './pages/About';
 import Contact from './pages/Contact';
-
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
 
@@ -22,7 +22,11 @@ function App() {
         <Route path="/" element={<Home setLoggedIn={setLoggedIn} />} />
         <Route path="/signup" element={<Signup setLoggedIn={setLoggedIn} />} />
         <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
-        <Route path="/dashboard" element={isLoggedIn ? <Dashboard /> : (<div className='text-white h-[calc(100vh-3rem)] flex justify-center items-center'><h1>Oopss..Please log in again</h1></div>)} />
+        <Route path="/dashboard" element={
+          <PrivateRoute isLoggedIn={isLoggedIn}>
+            <Dashboard />
+          </PrivateRoute>
+        } />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
       </Routes>

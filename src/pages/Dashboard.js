@@ -16,7 +16,6 @@ const Dashboard = () => {
     try {
       const res = await fetch(apiUrl);
       const output = await res.json();
-      // console.log(output);
       setCourses(output.data);
     }
     catch (error) {
@@ -33,8 +32,10 @@ const Dashboard = () => {
 
 
   return (
+
+    
     <>
-      <div className="bg-bgDark2 min-h-[100vh]">
+      <div className="bg-bgDark2 min-h-[100vh] scroll-smooth">
         <Filter category={category} setCategory={setCategory} filterData={filterData} />
 
         <div className="w-11/12 max-w-[1200px] mx-auto flex flex-wrap justify-center items-center  min-h-[50vh] ">

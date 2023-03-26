@@ -16,6 +16,7 @@ const LogInForm = ({ setLoggedIn }) => {
     }
     function submitHandler(event) {
         event.preventDefault();
+        console.log(formData);
         setLoggedIn(true);
         toast.success("Logged In Successfully!");
         navigate('/dashboard');
@@ -36,8 +37,8 @@ const LogInForm = ({ setLoggedIn }) => {
                 <p className='font-semibold mt-3 '>
                     Password<sup>*</sup>
                 </p>
-                <input type={show ? 'text' : 'password'} required value={formData.password} name='password' id='password' onChange={changeHandler} placeholder="Enter Password " 
-                className='w-[100%] bg-gray-600 outline-none rounded-sm py-2 px-4 text-white text-md placeholder:text-white opacity-70    shadow-inner shadow-gray-500   hover:opacity-100 transition-all duration-300 ' />
+                <input type={show ? 'text' : 'password'} required value={formData.password} name='password' id='password' onChange={changeHandler} placeholder="Enter Password "
+                    className='w-[100%] bg-gray-600 outline-none rounded-sm py-2 px-4 text-white text-md placeholder:text-white opacity-70    shadow-inner shadow-gray-500   hover:opacity-100 transition-all duration-300 ' />
 
                 <span onClick={showHandler} className="absolute z-[100] bottom-0 right-2">
                     {
@@ -50,7 +51,7 @@ const LogInForm = ({ setLoggedIn }) => {
                 <p>Forgot Password</p>
             </Link>
 
-            <button className='bg-yellow-400   text-black w-[100%] mt-8 py-2 font-semibold rounded-md hover:bg-yellow-500 transition-all duration-300 ' >Sign In</button>
+            <button className='bg-yellow-400   text-black w-[100%] mt-8 py-2 font-semibold rounded-md hover:bg-yellow-500 transition-all duration-300 animate-pulse' >Sign In</button>
 
         </form>
     )

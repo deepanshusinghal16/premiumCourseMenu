@@ -5,6 +5,10 @@ import { useNavigate } from 'react-router-dom';
 const SignUpForm = ({ setLoggedIn }) => {
 
     const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '', password: '', cnfPassword: '' })
+    const [accountType, setAccountType] = useState("student");
+
+
+
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
     const navigate = useNavigate();
@@ -20,8 +24,11 @@ const SignUpForm = ({ setLoggedIn }) => {
     }
     function submitHandler(event) {
         event.preventDefault();
+        const accountData = { ...formData };
+        const finalData = { ...formData, accountType }
+        console.log("Prinnting final Account Data: ");
+        console.log(finalData);
         if (formData.password === formData.cnfPassword) {
-            console.log(formData);
             toast.success("Registration Successful");
 
 
@@ -37,12 +44,16 @@ const SignUpForm = ({ setLoggedIn }) => {
 
 
 
+
+
+
+
     return (
         <div>
 
-            <div className='flex  bg-slate-500 w-min px-1 py-[0.1rem] rounded-md  my-2  '>
-                <button className='active bg-black py-[0.2rem] px-3  rounded-lg'>Student</button>
-                <button className='inactive opacity-70 py-[0.2rem] px-3  rounded-lg'>Instructor</button>
+            <div className='flex  bg-slate-500 w-min  p-[0.1rem] rounded-2xl  my-2  '>
+                <button className={`${accountType === "student" ? "bg-black py-[0.2rem] px-3  rounded-2xl" : "opacity-70 py-[0.2rem] px-3  rounded-2xl"}  duration-300 transition-all `} onClick={() => setAccountType("student")}>Student</button>
+                <button className={`${accountType === "student" ? "opacity-70 py-[0.2rem] px-3  rounded-2xl" : "bg-black py-[0.2rem] px-3  rounded-2xl"} duration-300 transition-all `} onClick={() => setAccountType("instructor")}>Instructor</button>
             </div>
 
             <form onSubmit={submitHandler}>
@@ -94,7 +105,7 @@ const SignUpForm = ({ setLoggedIn }) => {
 
                 </div>
 
-                <button to="#" className='bg-yellow-400   text-black w-[100%] mt-8 py-2 font-semibold rounded-md hover:bg-yellow-500 transition-all duration-300 '>
+                <button to="#" className='bg-yellow-300 text-black w-[100%] mt-8 py-2 font-semibold rounded-md animate-pulse '>
                     Create Account
                 </button>
 
