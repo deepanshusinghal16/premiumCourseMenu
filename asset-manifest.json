@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/premiumCourseMenu/static/css/main.da503975.css",
-    "main.js": "/premiumCourseMenu/static/js/main.0d0fb329.js",
-    "static/media/signup.png": "/premiumCourseMenu/static/media/signup.b431d919de01b6515dd6.png",
-    "static/media/login.png": "/premiumCourseMenu/static/media/login.4d877a447365e5137b67.png",
+    "main.js": "/premiumCourseMenu/static/js/main.23d09eb9.js",
+    "static/media/signup.png": "/premiumCourseMenu/static/media/signup.b0a39c1ece7d39f7d339.png",
+    "static/media/login.png": "/premiumCourseMenu/static/media/login.f649fe6310b22e1daf30.png",
     "static/media/deep2.jpg": "/premiumCourseMenu/static/media/deep2.4264cc40ed5f37b14245.jpg",
     "static/media/deep.jpg": "/premiumCourseMenu/static/media/deep.a0e8b94cc97748207dd7.jpg",
     "static/media/frame.png": "/premiumCourseMenu/static/media/frame.3a238e5f26d676376e1d.png",
     "static/media/Logo.svg": "/premiumCourseMenu/static/media/Logo.fd896773ef070a122541fd8722efa10f.svg",
     "index.html": "/premiumCourseMenu/index.html",
     "main.da503975.css.map": "/premiumCourseMenu/static/css/main.da503975.css.map",
-    "main.0d0fb329.js.map": "/premiumCourseMenu/static/js/main.0d0fb329.js.map"
+    "main.23d09eb9.js.map": "/premiumCourseMenu/static/js/main.23d09eb9.js.map"
   },
   "entrypoints": [
     "static/css/main.da503975.css",
-    "static/js/main.0d0fb329.js"
+    "static/js/main.23d09eb9.js"
   ]
 }
