@@ -26,11 +26,11 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
             <div className='block sm:hidden'><AiOutlineHome /></div>
             <div className='hidden sm:block'>Home</div>
           </Link></li>
-          <li><Link to="/about" className='flex'>
+          <li><Link to="/premiumCourseMenu/about" className='flex'>
             <div className='block sm:hidden'><AiOutlineContacts /></div>
             <div className='hidden sm:block'>About</div>
           </Link></li>
-          <li><Link to="/contact" className='flex'>
+          <li><Link to="/premiumCourseMenu/contact" className='flex'>
             <div className='block sm:hidden'>< BiPhoneCall /></div>
             <div className='hidden sm:block'>Contact</div>
           </Link></li>
@@ -40,7 +40,7 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
       <div className='flex gap-[1rem]'>
         {!isLoggedIn &&
           <button className='border-transparent bg-slate-700 px-3 py-1 rounded-lg opacity-70  hover:opacity-100 transition-all duration-300'>
-            <Link to="/login" className='flex'>
+            <Link to="/premiumCourseMenu/login" className='flex'>
               <div className='block sm:hidden'><BiUserCircle /></div>
               <div className='hidden sm:block'>Login</div>
             </Link>
@@ -48,7 +48,7 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
         }
         {!isLoggedIn &&
           <button className='border-transparent bg-slate-700 px-3 py-1 rounded-lg opacity-70  hover:opacity-100 transition-all duration-300'>
-            <Link to="/signup" >
+            <Link to="/premiumCourseMenu/signup" >
               <div className='block sm:hidden'><AiOutlineUserAdd /></div>
               <div className='hidden sm:block'>Sign Up</div>
             </Link>
@@ -67,7 +67,7 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
         }
         {isLoggedIn &&
           <button className='border-transparent bg-slate-700 px-3 py-1 rounded-lg opacity-70  hover:opacity-100 transition-all duration-300'>
-            <Link to="/dashboard" className='flex'>
+            <Link to="/premiumCourseMenu/dashboard" className='flex'>
               <div className='block sm:hidden'><RxDashboard /></div>
               <div className='hidden sm:block'>Dashboard</div>
             </Link>

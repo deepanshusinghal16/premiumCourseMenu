@@ -19,7 +19,7 @@ const LogInForm = ({ setLoggedIn }) => {
         console.log(formData);
         setLoggedIn(true);
         toast.success("Logged In Successfully!");
-        navigate('/dashboard');
+        navigate('/premiumCourseMenu/dashboard');
 
     }
     return (

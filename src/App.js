@@ -21,15 +21,15 @@ function App() {
       {/* Routes */}
       <Routes>
         <Route path="/premiumCourseMenu" element={<Home setLoggedIn={setLoggedIn} />} />
-        <Route path="/signup" element={<Signup setLoggedIn={setLoggedIn} />} />
-        <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
-        <Route path="/dashboard" element={
+        <Route path="/premiumCourseMenu/signup" element={<Signup setLoggedIn={setLoggedIn} />} />
+        <Route path="/premiumCourseMenu/login" element={<Login setLoggedIn={setLoggedIn} />} />
+        <Route path="/premiumCourseMenu/dashboard" element={
           <PrivateRoute isLoggedIn={isLoggedIn}>
             <Dashboard />
           </PrivateRoute>
         } />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/premiumCourseMenu/contact" element={<Contact />} />
+        <Route path="/premiumCourseMenu/about" element={<About />} />
       </Routes>
     </div>
   );

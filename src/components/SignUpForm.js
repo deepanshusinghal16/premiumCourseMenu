@@ -33,7 +33,7 @@ const SignUpForm = ({ setLoggedIn }) => {
 
 
             toast.success("You are logged now!")
-            navigate('/dashboard');
+            navigate('/premiumCourseMenu/dashboard');
 
         }
         else {
