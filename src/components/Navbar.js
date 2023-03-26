@@ -11,7 +11,7 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
   return (
     <div className='flex justify-between sm:justify-evenly items-center bg-black text-white h-[3rem] mx-auto'>
 
-      <Link to="/" >
+      <Link to="/premiumCourseMenu" >
         <div className='hidden sm:block'>
           <img src={logo} alt="Logo" width={160} height={32} loading="lazy" />
         </div>
@@ -22,7 +22,7 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
 
       <nav>
         <ul className=' gap-[2rem] flex'>
-          <li><Link to="/" className='flex '>
+          <li><Link to="/premiumCourseMenu" className='flex '>
             <div className='block sm:hidden'><AiOutlineHome /></div>
             <div className='hidden sm:block'>Home</div>
           </Link></li>
@@ -59,7 +59,7 @@ const Navbar = ({ isLoggedIn, setLoggedIn }) => {
             setLoggedIn(false);
             toast.success("Logged Out");
           }}>
-            <Link to="/" className='flex'>
+            <Link to="/premiumCourseMenu" className='flex'>
               <div className='block sm:hidden'><AiOutlineLogout /></div>
               <div className='hidden sm:block'>Log Out</div>
             </Link>

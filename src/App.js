@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -13,13 +13,14 @@ import PrivateRoute from './components/PrivateRoute';
 function App() {
 
   const [isLoggedIn, setLoggedIn] = useState(false);
+
   return (
     <div className="App bg-black ">
       <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
 
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<Home setLoggedIn={setLoggedIn} />} />
+        <Route path="/premiumCourseMenu" element={<Home setLoggedIn={setLoggedIn} />} />
         <Route path="/signup" element={<Signup setLoggedIn={setLoggedIn} />} />
         <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
         <Route path="/dashboard" element={
